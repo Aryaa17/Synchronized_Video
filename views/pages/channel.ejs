@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  </head>
+  <body class="container">
+    <header>
+      <% include ../partials/head %>
+    </header>
+    <script>
+      var username = <%- JSON.stringify(username) %>; 
+      console.log(username);
+    </script>
+ 
+    <main>
+    <video id="Video1" width="100%" height="auto" controls>
+      <source src="/video" type="video/webm" />
+      HTML5 Video is required for this example. 
+      <!--     <a href="demo.mkv">Download the video</a> file. -->
+    </video>
+    <div class="w3-display-middle w3-margin-top w3-center">
+      <!--    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>BRIDGE</b></span> <span class="w3-hide-small w3-text-light-grey">.NET</span></h1> -->
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/synch.js"></script>
+   </main>
+  </body>
+</html>
